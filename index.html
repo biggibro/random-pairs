@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="app.js" type="module" defer></script>
+    <title>Random Names</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Случайные пары</h1></header>
+
+      <section>
+        <h2>Введите имя игрока</h2>
+        <div class="input-group">
+          <input type="text" placeholder="Введите имя" id="name-input" class="input-wrapper" />
+          <button id="name-btn" type="button" class="name-btn">Сохранить</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Список игроков</h2>
+        <button id="clear-btn" type="button" class="clear-btn">Очистить</button>
+        <ul id="name-list"></ul>
+      </section>
+
+      <section>
+        <h2>Генерация пар</h2>
+        <p>Нажмите кнопку, чтобы сгенерировать случайные пары</p>
+        <button id="random-btn" type="button" class="random-btn">Генерировать</button>
+        <ul id="name-list-pairs"></ul>
+      </section>
+    </div>
+  </body>
+</html>
